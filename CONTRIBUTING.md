@@ -1,10 +1,8 @@
 # Contributing
-Pull requests which drastically alter the structure or architecture of the code will not be accepted. 
-This is to maintain "sanity" whilst going back through code, comparing to the original MIPS disassembled output.
-Best pull requests are which resolve bugs, finish existing decompiled methods, improve readability, introduce new decompiled methods and improve code documentation.
 
-It's also good to see which issues have more priority to work with here:
-https://github.com/OpenDriver2/REDRIVER2/contribute
+This fork is not currently open to contributions.
+If you want to contribute to the original REDRIVER2, please refer to this link: https://github.com/OpenDriver2/REDRIVER2
+If you want to fork this fork, you are welcome to do so.
 
 #### Markers for decompiled function names, code, etc
 

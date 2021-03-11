@@ -1,23 +1,26 @@
-# REDRIVER2
+# REDRIVER2 (RetroZvoc's fork)
 
-PC (Windows and Linux):
-[![Build status](https://ci.appveyor.com/api/projects/status/9abepvls6jexapqy/branch/master?svg=true)](https://ci.appveyor.com/project/SoapyMan/redriver2-10jm8/branch/master)
+This is a fork of SoapyMan's REDRIVER2.
 
-### Timeline: 
-- Feb 19, 2019 - created skeleton, one year long preparations
-- Mar 28, 2020 - started work on reimplementing the game, game intro running
-- Sep 19, 2020 - reimplementing game complete - game is fully playable
-- Jan 15, 2021 - refactoring complete
+This fork is made as a mod of REDRIVER2 dedicated to RetroZvoc's mods.
 
-### Information
-- Game was completely disassembled and reverse-engineered from MIPS back to C (except Memory Card menu overlay)
-- Game has been *significantly improved over the original Playstation version*, original bugs was fixed and completed some unfinished gameplay aspects
-- Utilizes [Psy-X (Psy-Cross) (formely extended TOMB5 emulator)](https://github.com/OpenDriver2/REDRIVER2/tree/master/src_rebuild/PsyX) as a layer for porting from Playstation
-- Runs on Windows, Linux and soon to be on the other platforms (including backport to Playstation), no emulation involved
-- Basic modding support - with textures and models replacement provided with [OpenDriver2Tools](https://github.com/OpenDriver2/OpenDriver2Tools)
+[![Build status](https://ci.appveyor.com/api/projects/status/vjh3o5gmrn328cud?svg=true)](https://ci.appveyor.com/project/RetroZvoc/redriver2)
 
-### What to expect from it
-- ***OpenDriver2*** project - complete rewrite with lots of new features such as *new renderer and sound engine, Lua scripting, Driver 1 content support*
+If you want to see the original REDRIVER2 made by SoapyMan, click here: https://github.com/OpenDriver2/REDRIVER2
+
+### Mods to implement
+- Perfect invincibility (no drowning, no Black Screen of Death, unflip instead of getting wrecked, be able to get out of a flipped car, and never take too much damage)
+- Unlimited upward velocity (skip web effect)
+- Unlimited angular velocity
+- Explosive cop cars when wrecked
+- 2-player freeroam
+- 2-player co-op undercover
+- 2-player on-foot action
+- Everything unlocked (towns, missions, cars, cheats, race tracks, debug menu, doors, gates, garages, switches, everything!)
+- 2-player gamemodes (assisted or versus of quick chase, quick getaway, survival, etc.)
+- Shift Existance (similar to Driver San Francisco; possibly with a floaty camera vision)
+- Better Film Director for multiplayer (in multiplayer pause/gameover menu, no camera boundary/distance restrictions, better control, show/hide HUD, change Sfx/Music volume)
+- and more...
 
 ### How is it done?
 - All information (variables, types and function names) have been obtained from debugging symbols (.SYM), driver_psx_level and DLE
@@ -25,10 +28,11 @@ PC (Windows and Linux):
 - IDB based on Spanish SYM when dealing with things Ghidra can't handle properly - manual decompilation (mostly GTE code)
 
 ### How to use
-See [Wiki/Installation Instructions](https://github.com/OpenDriver2/REDRIVER2/wiki/Installation-instructions)
+The instructions are located on the original [REDRIVER2 repository's wiki](https://github.com/OpenDriver2/REDRIVER2/wiki/Installation-instructions)
 
 ### Credits
-- Soapy - lead programmer
+- RetroZvoc - mod programmer for this fork
+- Soapy - lead programmer (of the original REDRIVER2)
 - Fireboyd78 - code refactoring and improvements
 - Krishty, someone972 - formats decoding
 - Gh0stBlade - API-level PSY-Q libraries reimplementation (HLE PSX Emulator) [(link)](https://github.com/tomb5/tomb5)

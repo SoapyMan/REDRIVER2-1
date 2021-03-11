@@ -1519,7 +1519,8 @@ void StepGame(void)
 		ShowReplayOptions();
 
 	// process fast forward
-	if (FastForward != 0 && CameraCnt < ReplayParameterPtr->RecordingEnd - 1)
+	// Retro: Don't show this annoying text if overlays are turned off!
+	if (FastForward && gDoOverlays && CameraCnt < ReplayParameterPtr->RecordingEnd - 1)
 	{
 		int color;
 		color = CameraCnt & 0x1f;
@@ -2174,6 +2175,11 @@ void UpdatePlayerInformation(void)
 		{
 			gDieWithFade = 1;
 		}
+	}
+	// Disable Black Screen of Death if invincibility is on
+	if (gInvincibleCar)
+	{
+		gDieWithFade = 0;
 	}
 }
 

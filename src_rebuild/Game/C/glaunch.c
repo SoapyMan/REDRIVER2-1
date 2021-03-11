@@ -112,7 +112,7 @@ int gRandomChase = 0;
 int gSubGameNumber = 0;
 
 int gMissionLadderPos = 0;
-int gFurthestMission = 0;
+int gFurthestMission = 40;
 
 int gWantNight = 0;
 
